@@ -1,0 +1,22 @@
+{
+    "name": "Measuer Images",
+    "description":
+        "Analyzes and measures images on a website based on a given breakpoint and returns their dimensions and informations",
+    "version": "0.1",
+    "manifest_version": 2,
+    "browser_action": {
+        "default_title": "Analyze images",
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+M",
+                "mac": "MacCtrl+Shift+M"
+            },
+            "description": "Analyze image sizes"
+        }
+    },
+    "permissions": ["tabs", "storage", "http://*/", "https://*/"]
+}
